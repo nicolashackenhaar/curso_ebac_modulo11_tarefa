@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif;
+  color: #00ff88;
+}
+
+body {
+  background: linear-gradient(to right, #201b2c, #431270);
+}
+
+.container {
+  max-width: 1024px;
+  width: 95%;
+  margin: 0 auto;
+
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header {
+  padding: 16px 0;
+  border-bottom: 1px solid #00ff88;
+  background-color: #00ff88;
+  
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  
+}
+
+nav ul li {
+  margin-right: 50px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: black;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 16px 0;
+}
+
+.sobre img {
+  width: 90%;
+}
+h1{
+  color: black;
+}
+h2 {
+  width: 100%;
+  border-bottom: 2px solid #00ff88;
+  padding: 16px 0;
+  margin-bottom: 16px;
+
+
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 24.25%);
+  column-gap: 1%;
+}
+
+.produto h3 {
+  font-size: 1.3em;
+  padding: 16px 0;
+}
+
+.produto img {
+  max-width: 100%;
+}
+
+button {
+  width: 100%;
+  padding:10px 0;
+  margin: 25px 0;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 2px 2px 40px 0 #00ff8052; 
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    display: block;
+    max-width: 85%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .produto h3{
+    font-size: 1.5em;
+    text-align: center;
+  }
+  p{
+    font-size: 1em;
+    text-align: center;
+  }
+  .container img{
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-right: 0px;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .sobre {
+    display: block;
+   
+  }
+
+  .produtos {
+    display: block;
+  }
+
+ 
+
+  .produto img {
+    max-width: 100%;
+  }
+
+  button {
+font-size: 1.1em;
+  }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .container {
+    display: block;
+    max-width: 80%;
+  }
+  .container img{
+    width: 100%;
+  }
+  .sobre {
+    display: block;
+   
+  }
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    column-gap: 1%;
+  }
+  
+
+}
